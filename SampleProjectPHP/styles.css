@@ -5,6 +5,19 @@
            background-attachment: fixed;
            background-size: cover;
 	}
+    
+    .column {
+         float: left;
+         width: 50%;
+      } 
+
+      /* Clear floats after the columns */
+
+    .row:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
 
     .content-table {
         border-collapse: collapse;
