@@ -93,6 +93,7 @@
 <a href="GetSecretValue.php">RDS MySQL : AWS Secerts Manager</a>
 
   <body background="Background_Image.jpg">
+  <div>
   <table class="content-table">
     <caption> Please Enter Your Data </caption>
     <thead>
@@ -117,8 +118,10 @@
     </tr>
     </tbody>
   </table>
+</div>
 </form>
 
+<div>
 <!-- Display table data. -->
 <table class="content-table">
   <caption> User Data </caption>
@@ -146,7 +149,7 @@ while($query_data = mysqli_fetch_row($result)) {
 ?>
 </tbody>
 </table>
-
+</div>
 <!-- Clean up. -->
 <?php
 
