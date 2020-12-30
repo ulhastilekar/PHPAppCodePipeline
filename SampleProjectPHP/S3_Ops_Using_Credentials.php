@@ -16,8 +16,8 @@ require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
 
-define('AWS_KEY', 'AKIAQY2JGRJSCQLMUKAM');
-define('AWS_SECRET_KEY', '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');
+define('AWS_KEY', '');
+define('AWS_SECRET_KEY', '');
 // $ENDPOINT = 'http://objects.dreamhost.com';
 
 try{
