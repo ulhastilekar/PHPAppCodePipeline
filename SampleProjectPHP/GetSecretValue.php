@@ -90,26 +90,26 @@ $secrets = json_decode( $secret, true );
 
 //echo( '<p>hostname/ipaddress: ' . $secrets[ 'host' ] . '</p><p>username: ' . $secrets[ 'username' ] . '</p><p>password: ' . $secrets[ 'password' ] . '</p><p>dbname: ' . $secrets[ 'dbname' ] . '</p>' );
 
-echo( '<p>hostname/ipaddress: ' . $secrets[ 'host' ] . '</p><p>username: ' . $secrets[ 'username' ] . '</p><p>dbname: ' . $secrets[ 'dbname' ] . '</p>' );
+//echo( '<p>hostname/ipaddress: ' . $secrets[ 'host' ] . '</p><p>username: ' . $secrets[ 'username' ] . '</p><p>dbname: ' . $secrets[ 'dbname' ] . '</p>' );
 
 //echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
 
 ?>	
 	<link rel="stylesheet" type="text/css" href="styles.css">
         <table class="content-table">
-             <caption>Monthly savings</caption>
+             <caption>RDS MySQL Database Details : From - Secrets Manager</caption>
 	<thead>
-        <tr>
-	   <th>hostname/ipaddress</th>
-           <th>username</th>
-           <th>dbname</th>
-	</tr>
+           <tr>
+	      <th>hostname/ipaddress</th>
+              <th>username</th>
+              <th>dbname</th>
+	   </tr>
         </thead>
         <tbody>
-        <tr>
-            <td><?php echo $secrets[ 'host' ]; ?></td> 
-            <td><?php echo $secrets[ 'username' ]; ?></td> 
-            <td><?php echo $secrets[ 'dbname' ]; ?></td> 
-        </tr>
+            <tr class="active-row">
+               <td><?php echo $secrets[ 'host' ]; ?></td> 
+               <td><?php echo $secrets[ 'username' ]; ?></td> 
+               <td><?php echo $secrets[ 'dbname' ]; ?></td> 
+            </tr>
         </tbody>
         </table>
