@@ -88,11 +88,7 @@ if (isset($result['SecretString'])) {
 // Decode the secret json
 $secrets = json_decode( $secret, true );
 
-//echo( '<p>hostname/ipaddress: ' . $secrets[ 'host' ] . '</p><p>username: ' . $secrets[ 'username' ] . '</p><p>password: ' . $secrets[ 'password' ] . '</p><p>dbname: ' . $secrets[ 'dbname' ] . '</p>' );
+echo( '<p>hostname/ipaddress: ' . $secrets[ 'host' ] . '</p><p>username: ' . $secrets[ 'username' ] . '</p><p>password: ' . $secrets[ 'password' ] . '</p><p>dbname: ' . $secrets[ 'dbname' ] . '</p>' );
 
-echo('<h1> Amazon RDS : Details provided by AWS Secrets Manager</h1>')
-
-echo( '<p>hostname/ipaddress: ' . $secrets[ 'host' ] . '</p><p>username: ' . $secrets[ 'username' ]  . '</p><p>dbname: ' . $secrets[ 'dbname' ] . '</p>' );
-
-//echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
-
+echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
+ 
