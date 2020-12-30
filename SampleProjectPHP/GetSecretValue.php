@@ -97,62 +97,8 @@ echo( '<p>hostname/ipaddress: ' . $secrets[ 'host' ] . '</p><p>username: ' . $se
 //echo '<script>alert("Welcome to Geeks for Geeks")</script>'; 
 
 
-?>
-
-<!-- Creating beautiful HTML tables with CSS : https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l -->
-<style>
-    .content-table {
-      border-collapse: collapse;
-      margin: 25px 0;
-      font-size: 0.9em;
-      min-width: 400px;
-    }
-
-    .content-table caption {
-      background-color:  #e67e22;
-      color:  #faf6f6;
-      text-align: centre;
-      font-weight: bold;
-
-      border-radius: 5px 5px 0 0;
-      overflow: hidden;
-      box-shadow: 0 0 20px rgba(0,0,0, 0.15);
-
-      padding: 12px 15px;
-    }
-
-    .content-table thead tr {
-      background-color:  #77d414;
-      color: #ffffff;
-      text-align: left;
-      font-weight: bold;
-    }
-
-    .content-table th,
-    .content-table td {
-      padding: 12px 15px;
-
-    }
-
-    .content-table tbody tr{
-        border-bottom:1px solid #dddddd;
-
-    }
-
-    .content-table tbody tr:nth-of-type(even){
-        background-color:#f3f3f3;
-    }
-
-    .content-table tbody tr:last-of-type{
-        border-bottom:2px solid  #77d414;
-    }
-
-    .content-table tbody tr.active-row{
-      font-weight: bold;
-      color:  #77d414;
-    }
-</style>
-
+echo('
+<link rel="stylesheet" type="text/css" href="styles.css">
 <body>
 <table class="content-table">
   <caption>Monthly savings</caption>
@@ -186,4 +132,4 @@ echo( '<p>hostname/ipaddress: ' . $secrets[ 'host' ] . '</p><p>username: ' . $se
        </tr>
   </tbody>
 </table>
-</body> 
+</body>'); 
