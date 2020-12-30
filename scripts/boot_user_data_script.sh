@@ -2,7 +2,6 @@ sudo su
 
 sudo yum update -y 
 
-sudo yum install httpd -y
 sudo amazon-linux-extras install -y php7.2
 sudo yum install php-mysqlnd php-pecl-memcache php-pecl-apcu php-gd php-mbstring -y --skip-broken
 
@@ -15,5 +14,7 @@ chmod +x ./install
 sudo ./install auto
 
 sudo service codedeploy-agent status
+
+sudo yum install httpd -y
 sudo service httpd start
 chkconfig httpd on
