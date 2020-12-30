@@ -92,15 +92,15 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 <a href="GetSecretValue.php">RDS MySQL : AWS Secerts Manager</a>
 
+  <body background="Background_Image.jpg">
   <table class="content-table">
-    <caption> User Data </caption>
+    <caption> Please Enter Your Data </caption>
     <thead>
     <tr>
       <td>NAME</td>
       <td>ADDRESS</td>
     </tr>
     </thead>
-   
     <tbody>
     <tr>
       <td>
@@ -109,6 +109,8 @@
       <td>
         <input type="text" name="ADDRESS" maxlength="90" size="60" />
       </td>
+    </tr>
+    <tr class="active-row">
       <td>
         <input type="submit" value="Add Data" />
       </td>
