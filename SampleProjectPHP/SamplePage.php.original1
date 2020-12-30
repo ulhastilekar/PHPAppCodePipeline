@@ -86,22 +86,13 @@
 });
 </script>
 
-
 <!-- Input form -->
 <form action="<?PHP echo $_SERVER['SCRIPT_NAME'] ?>" method="POST">
-<link rel="stylesheet" type="text/css" href="styles.css">
-<a href="GetSecretValue.php">RDS MySQL : AWS Secerts Manager</a>
-
-  <table class="content-table">
-    <caption> User Data </caption>
-    <thead>
+  <table border="0">
     <tr>
       <td>NAME</td>
       <td>ADDRESS</td>
     </tr>
-    </thead>
-   
-    <tbody>
     <tr>
       <td>
         <input type="text" name="NAME" maxlength="45" size="30" />
@@ -113,22 +104,16 @@
         <input type="submit" value="Add Data" />
       </td>
     </tr>
-    </tbody>
   </table>
 </form>
 
 <!-- Display table data. -->
-<table class="content-table">
-  <caption> User Data </caption>
-  <thead>
+<table border="1" cellpadding="2" cellspacing="2">
   <tr>
     <td>ID</td>
     <td>NAME</td>
     <td>ADDRESS</td>
   </tr>
-  </thead>
- 
-  <tbody>
 
 <?php
 
@@ -142,7 +127,7 @@ while($query_data = mysqli_fetch_row($result)) {
   echo "</tr>";
 }
 ?>
-</tbody>
+
 </table>
 
 <!-- Clean up. -->
