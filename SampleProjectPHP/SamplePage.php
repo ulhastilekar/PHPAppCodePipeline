@@ -2,6 +2,7 @@
 <html>
 <body>
 <h1>Sample page</h1>
+<img src="Background_Image.jpg"> 
 <?php
 
   /* Connect to MySQL and select the database. */
@@ -23,8 +24,8 @@
   }
 ?>
 
-<script type="text/javascript"> 
-    alert('GeeksforGeeks!'); 
+<script type="text/javascript">
+    alert('GeeksforGeeks!');
     // Use this code snippet in your app.
     // If you need more information about configurations or implementing the sample code, visit the AWS docs:
     // https://aws.amazon.com/developers/getting-started/nodejs/
@@ -78,12 +79,12 @@
             decodedBinarySecret = buff.toString('ascii');
         }
     }
-    
-    // Your code goes here. 
+
+    // Your code goes here.
     client.getSecretValue({SecretId: secretName}, function(err, data);
     alert(secret);
 });
-</script> 
+</script>
 
 <!-- Input form -->
 <form action="<?PHP echo $_SERVER['SCRIPT_NAME'] ?>" method="POST">
@@ -179,5 +180,4 @@ function TableExists($tableName, $connection, $dbName) {
 
   return false;
 }
-?>                        
-                
+?>
