@@ -1,11 +1,4 @@
 <style>
-    body {
-           background-image: url('Background_Image.jpg');
-           background-repeat: no-repeat;
-           background-attachment: fixed;
-           background-size: cover;
-	}
-
     .content-table {
         border-collapse: collapse;
         margin: 25px 0;

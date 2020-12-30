@@ -2,7 +2,7 @@
 <html>
 <body>
 <h1>Sample page</h1>
-<!-- img src="Background_Image.jpg" --> 
+<img src="Background_Image.jpg"> 
 <?php
 
   /* Connect to MySQL and select the database. */
