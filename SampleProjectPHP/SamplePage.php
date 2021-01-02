@@ -1,7 +1,7 @@
 <?php include "../inc/dbinfo.inc"; ?>
 <html>
 <body>
-<h1>Sample page</h1>
+<h1>Octank Pvt. Ltd. </h1>
 <!-- img src="Background_Image.jpg" --> 
 <?php
 
