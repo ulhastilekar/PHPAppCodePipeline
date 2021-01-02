@@ -24,6 +24,14 @@
         margin: 25px 0;
         font-size: 0.9em;
         min-width: 400px;
+	
+    }
+  
+
+    .content-table,
+    .content-table th,
+    .content-table td {
+           border: 3px solid black;
     }
 
     .content-table caption {
