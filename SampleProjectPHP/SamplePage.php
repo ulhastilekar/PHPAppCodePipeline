@@ -202,4 +202,8 @@ function TableExists($tableName, $connection, $dbName) {
 
   return false;
 }
+
+$host_name = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+echo "The Host Name is ".$host_name;
+
 ?>
