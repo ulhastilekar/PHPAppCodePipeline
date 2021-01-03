@@ -203,23 +203,7 @@ function TableExists($tableName, $connection, $dbName) {
   return false;
 }
 
-//$host_name = gethostbyaddr($_SERVER['REMOTE_ADDR']);
-//echo "The Host Name is ".$host_name;
-//
-
-$handle = curl_init();
-
-$url = "http://169.254.169.254/latest/meta-data/local-ipv4";
-
-// Set the url
-curl_setopt($handle, CURLOPT_URL, $url);
-// Set the result output to be a string.
-curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
-
-$output = curl_exec($handle);
-
-curl_close($handle);
-
-echo "Private IP Address of the host is ".$output;
+$host_name = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+echo "The Host Name is ".$host_name;
 
 ?>
