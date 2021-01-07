@@ -32,7 +32,7 @@
     .content-table caption,
     .content-table th,
     .content-table td {
-           border: 10px solid black;
+           border: 3px solid red;
     }
 
     .content-table caption {
