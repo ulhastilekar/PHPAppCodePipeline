@@ -24,7 +24,7 @@
         margin: 25px 0;
         font-size: 0.9em;
         min-width: 400px;
-	
+        border: 6 px solid black;	
     }
   
 
@@ -32,7 +32,7 @@
     .content-table caption,
     .content-table th,
     .content-table td {
-           border: 3px solid black;
+           border: 6 px solid black;
     }
 
     .content-table caption {
